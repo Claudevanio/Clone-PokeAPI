@@ -1,4 +1,6 @@
 using Clone_PokeAPI.Data;
+using Clone_PokeAPI.Repositories.Interfaces;
+using Clone_PokeAPI.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Clone_PokeAPI
@@ -15,10 +17,13 @@ namespace Clone_PokeAPI
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"));
             });
 
+            builder.Services.AddScoped<IPokemonRepository, PokemonRepository>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
 
 
             var app = builder.Build();

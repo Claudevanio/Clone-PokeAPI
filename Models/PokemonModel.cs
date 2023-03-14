@@ -1,6 +1,6 @@
 ﻿namespace Clone_PokeAPI.Models
 {
-    public class PokemonInfoModel
+    public class PokemonModel
     {
         public int Id { get; set; }
 

@@ -2,10 +2,12 @@
 {
     public class StatsModel
     {
+        public int Id { get; set; }
         public string Name { get; set; }
 
-        public string Url { get; set; }
+        public int BaseStat { get; set; }
 
-        public int BaseValue { get; set; }
+        public PokemonModel Pokemon { get; set; }
+        public int PokemonModelId { get; set; }
     }
 }
