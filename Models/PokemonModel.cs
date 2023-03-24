@@ -1,5 +1,8 @@
-﻿namespace Clone_PokeAPI.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Clone_PokeAPI.Models
 {
+    [Table("Pokemons")]
     public class PokemonModel
     {
         public int Id { get; set; }
