@@ -1,6 +1,7 @@
 ﻿using Clone_PokeAPI.Data;
 using Clone_PokeAPI.Models;
 using Clone_PokeAPI.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Clone_PokeAPI.Repositories
 {
@@ -18,14 +19,20 @@ namespace Clone_PokeAPI.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<PokemonModel> GetByName(string name)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task<List<PokemonModel>> ListPokemons(int offset, int limit)
+        public async Task<List<PokemonList>> ListPokemons(int offset, int limit)
         {
-            throw new NotImplementedException();
+            var pokemons = await _dbContext.Pokemons
+                .Skip(offset)
+                .Take(limit)
+                .Select(p => new PokemonList
+                {
+                    name = p.Name,
+                    url = $"https://localhost:7066/{p.URLDescription}"
+                })
+                .ToListAsync();
+
+            return pokemons.ToList();
         }
     }
 }
