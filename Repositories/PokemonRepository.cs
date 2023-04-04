@@ -1,5 +1,7 @@
 ﻿using Clone_PokeAPI.Data;
+using Clone_PokeAPI.Mapper;
 using Clone_PokeAPI.Models;
+using Clone_PokeAPI.Models.PokemonsDetail;
 using Clone_PokeAPI.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,9 +16,19 @@ namespace Clone_PokeAPI.Repositories
             _dbContext = dbContext;
         }
 
-        public Task<PokemonModel> GetById(int id)
+        public async Task<PokemonApiDto> GetById(int id)
         {
-            throw new NotImplementedException();
+            PokemonModel pokemon = await _dbContext.Pokemons
+                .Include(x => x.Type)
+                .Include(x => x.Stat)
+                .Include(x => x.Sprites)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (pokemon == null) throw new Exception($"Pokemon para o ID: {id} não foi encontrado no banco de dados!");
+
+            PokemonApiDto pokemonDto = pokemon.ToApiDTO();
+
+            return pokemonDto;
         }
 
 
@@ -32,7 +44,7 @@ namespace Clone_PokeAPI.Repositories
                 })
                 .ToListAsync();
 
-            return pokemons.ToList();
+            return pokemons;
         }
     }
 }

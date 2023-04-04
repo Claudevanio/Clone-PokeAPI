@@ -1,11 +1,12 @@
 ﻿using Clone_PokeAPI.Models;
+using Clone_PokeAPI.Models.PokemonsDetail;
 using Clone_PokeAPI.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Clone_PokeAPI.Controller
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class PokemonController : ControllerBase
     {
@@ -16,11 +17,19 @@ namespace Clone_PokeAPI.Controller
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PokemonList>>> FetchPokemons(int offset = 0, int limit = 20)
+        public async Task<ActionResult<List<PokemonList>>> FetchPokemons(int limit = 5, int offset = 0)
         {
             List<PokemonList> pokemons = await _repository.ListPokemons(offset, limit);
 
             return Ok(pokemons);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PokemonApiDto>> SearchById(int id)
+        {
+            PokemonApiDto pokemon = await _repository.GetById(id);
+
+            return Ok(pokemon);
         }
     }
 }
