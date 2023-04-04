@@ -1,4 +1,5 @@
 ﻿using Clone_PokeAPI.Models;
+using Clone_PokeAPI.Models.PokemonsDetail;
 
 namespace Clone_PokeAPI.Repositories.Interfaces
 {
@@ -6,6 +7,6 @@ namespace Clone_PokeAPI.Repositories.Interfaces
     {
         Task<List<PokemonList>> ListPokemons(int offset, int limit);
 
-        Task<PokemonModel> GetById(int id);
+        Task<PokemonApiDto> GetById(int id);
     }
 }

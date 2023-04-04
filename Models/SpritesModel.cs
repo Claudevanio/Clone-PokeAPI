@@ -1,4 +1,6 @@
-﻿namespace Clone_PokeAPI.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Clone_PokeAPI.Models
 {
     public class SpritesModel
     {
@@ -7,6 +9,7 @@
 
         public string OtherFrontDefault { get; set; }
 
+        [JsonIgnore]
         public PokemonModel Pokemon { get; set; }   
 
         public int PokemonModelId { get; set; }

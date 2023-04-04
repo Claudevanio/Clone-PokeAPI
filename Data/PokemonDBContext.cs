@@ -18,18 +18,5 @@ namespace Clone_PokeAPI.Data
 
         public DbSet<TypeModel> Types { get; set; }
 
-
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new PokemonMap());
-
-            modelBuilder.Entity<DreamWorld>()
-                .HasNoKey();
-
-             
-
-
-            base.OnModelCreating(modelBuilder);
-        }*/
     }
 }
