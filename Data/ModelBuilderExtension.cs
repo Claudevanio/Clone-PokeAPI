@@ -384,6 +384,7 @@ namespace Clone_PokeAPI.Data
                     new PokemonType { Id = 9, PokemonModelId = 6, TypeModelId = 3 },
                     new PokemonType { Id = 10, PokemonModelId = 6, TypeModelId = 7 },
                     new PokemonType { Id = 11, PokemonModelId = 7, TypeModelId = 4 },
+                    new PokemonType { Id = 26, PokemonModelId = 8, TypeModelId = 4 },
                     new PokemonType { Id = 12, PokemonModelId = 9, TypeModelId = 4 },
                     new PokemonType { Id = 13, PokemonModelId = 10, TypeModelId = 5 },
                     new PokemonType { Id = 14, PokemonModelId = 11, TypeModelId = 5 },

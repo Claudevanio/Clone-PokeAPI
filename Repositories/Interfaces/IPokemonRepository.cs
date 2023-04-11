@@ -8,5 +8,7 @@ namespace Clone_PokeAPI.Repositories.Interfaces
         Task<List<PokemonList>> ListPokemons(int offset, int limit);
 
         Task<PokemonApiDto> GetById(int id);
+
+        Task<int> CountPokemons();
     }
 }

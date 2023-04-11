@@ -21,11 +21,20 @@ namespace Clone_PokeAPI.Controller
         {
             List<PokemonList> pokemons = await _repository.ListPokemons(offset, limit);
 
+            int totalPokemons = await _repository.CountPokemons();
 
-            return Ok (new {
-                results = pokemons,
-                
-            });
+            if(offset >= totalPokemons) return NoContent();
+
+            var response = new
+            {
+                count = totalPokemons,
+                next = offset + limit < totalPokemons ? $"{Request.Scheme}://{Request.Host}/pokemon?offset={offset + limit}&limit={limit}" : null,
+                previous = offset - limit >= 0 ? $"{Request.Scheme}://{Request.Host}/pokemon?offset={offset - limit}&limit={limit}" : null,
+                results = pokemons
+            };
+
+
+            return Ok (response);
         }
 
         [HttpGet("{id}")]

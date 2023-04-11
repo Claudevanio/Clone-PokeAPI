@@ -41,11 +41,16 @@ namespace Clone_PokeAPI.Repositories
                 .Select(p => new PokemonList
                 {
                     name = p.Name,
-                    url = $"https://localhost:7066/Pokemon/{p.Id}"
+                    url = $"https://localhost:7066/pokemon/{p.Id}"
                 })
                 .ToListAsync();
 
             return pokemons;
+        }
+
+        public async Task<int> CountPokemons()
+        {
+            return await _dbContext.Pokemons.CountAsync();
         }
     }
 }
