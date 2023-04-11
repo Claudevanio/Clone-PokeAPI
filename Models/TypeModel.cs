@@ -13,7 +13,7 @@ namespace Clone_PokeAPI.Models
         [JsonIgnore]
         public List<PokemonModel> Pokemons { get; set; }
 
-        public string? URL { get; set; }
-        
+        public List<PokemonType> PokemonTypes { get; set; }
+
     }
 }
