@@ -9,9 +9,9 @@ namespace Clone_PokeAPI.Models
 
         public string Name { get; set; }
 
-        public string URLDescription { get; set; }
-
         public List<TypeModel> Type { get; set; }
+
+        public List<PokemonType> PokemonTypes { get; set; }
 
         public List<StatsModel> Stat { get; set; }
 

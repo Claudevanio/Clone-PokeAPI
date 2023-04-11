@@ -19,7 +19,8 @@ namespace Clone_PokeAPI.Repositories
         public async Task<PokemonApiDto> GetById(int id)
         {
             PokemonModel pokemon = await _dbContext.Pokemons
-                .Include(x => x.Type)
+                .Include(x => x.PokemonTypes)
+                    .ThenInclude(x => x.TypeModel)
                 .Include(x => x.Stat)
                 .Include(x => x.Sprites)
                 .FirstOrDefaultAsync(x => x.Id == id);
@@ -40,7 +41,7 @@ namespace Clone_PokeAPI.Repositories
                 .Select(p => new PokemonList
                 {
                     name = p.Name,
-                    url = $"https://localhost:7066/{p.URLDescription}"
+                    url = $"https://localhost:7066/Pokemon/{p.Id}"
                 })
                 .ToListAsync();
 

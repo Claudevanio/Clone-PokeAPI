@@ -40,13 +40,13 @@ namespace Clone_PokeAPI.Mapper
                 });
             }
 
-            foreach (var type in pokemon.Type)
+            foreach (var type in pokemon.PokemonTypes)
             {
                 apiDTO.types.Add(new TypesDto
                 {
                     type = new TypeDto
                     {
-                        name = type.TypeName,
+                        name = type.TypeModel.TypeName,
                     }
                 });
             }

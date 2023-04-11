@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Clone_PokeAPI.Controller
 {
-    [Route("[controller]")]
+    [Route("pokemon")]
     [ApiController]
     public class PokemonController : ControllerBase
     {
@@ -17,11 +17,15 @@ namespace Clone_PokeAPI.Controller
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PokemonList>>> FetchPokemons(int limit = 5, int offset = 0)
+        public async Task<ActionResult<List<PokemonList>>> FetchPokemons(int limit = 20, int offset = 0)
         {
             List<PokemonList> pokemons = await _repository.ListPokemons(offset, limit);
 
-            return Ok(pokemons);
+
+            return Ok (new {
+                results = pokemons,
+                
+            });
         }
 
         [HttpGet("{id}")]
