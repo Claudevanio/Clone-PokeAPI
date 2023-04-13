@@ -1,4 +1,4 @@
-# Clonando e iniciando a PokeAPI (React.js)
+# Clonando e iniciando a PokeAPI.
 
 ### Após clonar este repositório, em seu diretório, altere o metódo **app.UseCors** em seu **Program.cs** para aceitar o consumo de seu front-end.
 
