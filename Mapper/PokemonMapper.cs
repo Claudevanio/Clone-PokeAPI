@@ -17,6 +17,7 @@ namespace Clone_PokeAPI.Mapper
                 name = pokemon.Name,
                 weight = pokemon.Weight,
                 height = pokemon.Height,
+                description = pokemon.Description,
                 sprites = new SpritesDto
                 {
                     front_default = pokemon.Sprites.FrontDefault,

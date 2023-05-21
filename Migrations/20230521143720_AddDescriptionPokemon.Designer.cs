@@ -3,6 +3,7 @@ using Clone_PokeAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clone_PokeAPI.Migrations
 {
     [DbContext(typeof(PokemonDBContext))]
-    partial class PokemonDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230521143720_AddDescriptionPokemon")]
+    partial class AddDescriptionPokemon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -415,141 +417,141 @@ namespace Clone_PokeAPI.Migrations
                         new
                         {
                             Id = 1,
-                            FrontDefault = "https://localhost:7066/Gifs/bulbasaur-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/bulbasaur-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg",
                             PokemonModelId = 1
                         },
                         new
                         {
                             Id = 2,
-                            FrontDefault = "https://localhost:7066/Gifs/ivysaur-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/ivysaur-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg",
                             PokemonModelId = 2
                         },
                         new
                         {
                             Id = 3,
-                            FrontDefault = "https://localhost:7066/Gifs/venusaur-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/venusaur-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg",
                             PokemonModelId = 3
                         },
                         new
                         {
                             Id = 4,
-                            FrontDefault = "https://localhost:7066/Gifs/charmander-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/charmander-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg",
                             PokemonModelId = 4
                         },
                         new
                         {
                             Id = 5,
-                            FrontDefault = "https://localhost:7066/Gifs/charmeleon-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/charmeleon-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg",
                             PokemonModelId = 5
                         },
                         new
                         {
                             Id = 6,
-                            FrontDefault = "https://localhost:7066/Gifs/charizard-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/charizard-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg",
                             PokemonModelId = 6
                         },
                         new
                         {
                             Id = 7,
-                            FrontDefault = "https://localhost:7066/Gifs/squirtle-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/squirtle-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg",
                             PokemonModelId = 7
                         },
                         new
                         {
                             Id = 8,
-                            FrontDefault = "https://localhost:7066/Gifs/wartortle-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/wartortle-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg",
                             PokemonModelId = 8
                         },
                         new
                         {
                             Id = 9,
-                            FrontDefault = "https://localhost:7066/Gifs/blastoise-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/blastoise-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg",
                             PokemonModelId = 9
                         },
                         new
                         {
                             Id = 10,
-                            FrontDefault = "https://localhost:7066/Gifs/caterpie-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/caterpie-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/10.svg",
                             PokemonModelId = 10
                         },
                         new
                         {
                             Id = 11,
-                            FrontDefault = "https://localhost:7066/Gifs/metapod-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/metapod-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/11.svg",
                             PokemonModelId = 11
                         },
                         new
                         {
                             Id = 12,
-                            FrontDefault = "https://localhost:7066/Gifs/butterfree-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/butterfree-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/12.svg",
                             PokemonModelId = 12
                         },
                         new
                         {
                             Id = 13,
-                            FrontDefault = "https://localhost:7066/Gifs/weedle-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/weedle-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/13.svg",
                             PokemonModelId = 13
                         },
                         new
                         {
                             Id = 14,
-                            FrontDefault = "https://localhost:7066/Gifs/kakuna-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/kakuna-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg",
                             PokemonModelId = 14
                         },
                         new
                         {
                             Id = 15,
-                            FrontDefault = "https://localhost:7066/Gifs/beedrill-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/beedrill-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/15.svg",
                             PokemonModelId = 15
                         },
                         new
                         {
                             Id = 16,
-                            FrontDefault = "https://localhost:7066/Gifs/pidgey-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/pidgey-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg",
                             PokemonModelId = 16
                         },
                         new
                         {
                             Id = 17,
-                            FrontDefault = "https://localhost:7066/Gifs/pidgeotto-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/pidgeotto-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/17.svg",
                             PokemonModelId = 17
                         },
                         new
                         {
                             Id = 18,
-                            FrontDefault = "https://localhost:7066/Gifs/pidgeot-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/pidgeot-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/18.svg",
                             PokemonModelId = 18
                         },
                         new
                         {
                             Id = 19,
-                            FrontDefault = "https://localhost:7066/Gifs/rattata-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/rattata-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg",
                             PokemonModelId = 19
                         },
                         new
                         {
                             Id = 20,
-                            FrontDefault = "https://localhost:7066/Gifs/raticate-card.gif",
-                            OtherFrontDefault = "https://localhost:7066/Gifs/raticate-details.gif",
+                            FrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+                            OtherFrontDefault = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/20.svg",
                             PokemonModelId = 20
                         });
                 });
