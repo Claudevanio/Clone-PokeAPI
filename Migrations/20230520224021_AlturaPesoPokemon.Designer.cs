@@ -3,6 +3,7 @@ using Clone_PokeAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clone_PokeAPI.Migrations
 {
     [DbContext(typeof(PokemonDBContext))]
-    partial class PokemonDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230520224021_AlturaPesoPokemon")]
+    partial class AlturaPesoPokemon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -558,561 +560,701 @@ namespace Clone_PokeAPI.Migrations
                         new
                         {
                             Id = 1,
-                            BaseStat = 60,
+                            BaseStat = 49,
                             Name = "hp",
                             PokemonModelId = 1
                         },
                         new
                         {
                             Id = 2,
-                            BaseStat = 62,
+                            BaseStat = 49,
                             Name = "attack",
                             PokemonModelId = 1
                         },
                         new
                         {
                             Id = 3,
-                            BaseStat = 63,
+                            BaseStat = 49,
                             Name = "defense",
                             PokemonModelId = 1
                         },
                         new
                         {
                             Id = 4,
-                            BaseStat = 63,
-                            Name = "speed",
+                            BaseStat = 49,
+                            Name = "special-attack",
                             PokemonModelId = 1
                         },
                         new
                         {
                             Id = 5,
-                            BaseStat = 45,
-                            Name = "hp",
-                            PokemonModelId = 2
+                            BaseStat = 49,
+                            Name = "special-defense",
+                            PokemonModelId = 1
                         },
                         new
                         {
                             Id = 6,
-                            BaseStat = 49,
-                            Name = "attack",
+                            BaseStat = 45,
+                            Name = "hp",
                             PokemonModelId = 2
                         },
                         new
                         {
                             Id = 7,
                             BaseStat = 49,
-                            Name = "defense",
+                            Name = "attack",
                             PokemonModelId = 2
                         },
                         new
                         {
                             Id = 8,
-                            BaseStat = 45,
-                            Name = "speed",
+                            BaseStat = 49,
+                            Name = "defense",
                             PokemonModelId = 2
                         },
                         new
                         {
                             Id = 9,
-                            BaseStat = 39,
-                            Name = "hp",
-                            PokemonModelId = 3
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 2
                         },
                         new
                         {
                             Id = 10,
-                            BaseStat = 52,
-                            Name = "attack",
-                            PokemonModelId = 3
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 2
                         },
                         new
                         {
                             Id = 11,
-                            BaseStat = 43,
-                            Name = "defense",
+                            BaseStat = 45,
+                            Name = "hp",
                             PokemonModelId = 3
                         },
                         new
                         {
                             Id = 12,
-                            BaseStat = 65,
-                            Name = "speed",
+                            BaseStat = 49,
+                            Name = "attack",
                             PokemonModelId = 3
                         },
                         new
                         {
                             Id = 13,
-                            BaseStat = 58,
-                            Name = "hp",
-                            PokemonModelId = 4
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 3
                         },
                         new
                         {
                             Id = 14,
-                            BaseStat = 64,
-                            Name = "attack",
-                            PokemonModelId = 4
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 3
                         },
                         new
                         {
                             Id = 15,
-                            BaseStat = 58,
-                            Name = "defense",
-                            PokemonModelId = 4
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 3
                         },
                         new
                         {
                             Id = 16,
-                            BaseStat = 80,
-                            Name = "speed",
+                            BaseStat = 45,
+                            Name = "hp",
                             PokemonModelId = 4
                         },
                         new
                         {
                             Id = 17,
-                            BaseStat = 44,
-                            Name = "hp",
-                            PokemonModelId = 5
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 4
                         },
                         new
                         {
                             Id = 18,
-                            BaseStat = 48,
-                            Name = "attack",
-                            PokemonModelId = 5
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 4
                         },
                         new
                         {
                             Id = 19,
                             BaseStat = 65,
-                            Name = "defense",
-                            PokemonModelId = 5
+                            Name = "special-attack",
+                            PokemonModelId = 4
                         },
                         new
                         {
                             Id = 20,
-                            BaseStat = 43,
-                            Name = "speed",
-                            PokemonModelId = 5
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 4
                         },
                         new
                         {
                             Id = 21,
-                            BaseStat = 59,
+                            BaseStat = 45,
                             Name = "hp",
-                            PokemonModelId = 6
+                            PokemonModelId = 5
                         },
                         new
                         {
                             Id = 22,
-                            BaseStat = 63,
+                            BaseStat = 49,
                             Name = "attack",
-                            PokemonModelId = 6
+                            PokemonModelId = 5
                         },
                         new
                         {
                             Id = 23,
-                            BaseStat = 80,
+                            BaseStat = 49,
                             Name = "defense",
-                            PokemonModelId = 6
+                            PokemonModelId = 5
                         },
                         new
                         {
                             Id = 24,
-                            BaseStat = 58,
-                            Name = "speed",
-                            PokemonModelId = 6
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 5
                         },
                         new
                         {
                             Id = 25,
-                            BaseStat = 79,
-                            Name = "hp",
-                            PokemonModelId = 7
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 5
                         },
                         new
                         {
                             Id = 26,
-                            BaseStat = 83,
-                            Name = "attack",
-                            PokemonModelId = 7
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 6
                         },
                         new
                         {
                             Id = 27,
-                            BaseStat = 100,
-                            Name = "defense",
-                            PokemonModelId = 7
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 6
                         },
                         new
                         {
                             Id = 28,
-                            BaseStat = 78,
-                            Name = "speed",
-                            PokemonModelId = 7
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 6
                         },
                         new
                         {
                             Id = 29,
-                            BaseStat = 45,
-                            Name = "hp",
-                            PokemonModelId = 8
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 6
                         },
                         new
                         {
                             Id = 30,
-                            BaseStat = 30,
-                            Name = "attack",
-                            PokemonModelId = 8
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 6
                         },
                         new
                         {
                             Id = 31,
-                            BaseStat = 35,
-                            Name = "defense",
-                            PokemonModelId = 8
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 7
                         },
                         new
                         {
                             Id = 32,
-                            BaseStat = 45,
-                            Name = "speed",
-                            PokemonModelId = 8
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 7
                         },
                         new
                         {
                             Id = 33,
-                            BaseStat = 60,
-                            Name = "hp",
-                            PokemonModelId = 9
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 7
                         },
                         new
                         {
                             Id = 34,
-                            BaseStat = 60,
-                            Name = "attack",
-                            PokemonModelId = 9
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 7
                         },
                         new
                         {
                             Id = 35,
-                            BaseStat = 70,
-                            Name = "defense",
-                            PokemonModelId = 9
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 7
                         },
                         new
                         {
                             Id = 36,
-                            BaseStat = 40,
-                            Name = "speed",
-                            PokemonModelId = 9
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 8
                         },
                         new
                         {
                             Id = 37,
-                            BaseStat = 40,
-                            Name = "hp",
-                            PokemonModelId = 10
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 8
                         },
                         new
                         {
                             Id = 38,
-                            BaseStat = 45,
-                            Name = "attack",
-                            PokemonModelId = 10
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 8
                         },
                         new
                         {
                             Id = 39,
-                            BaseStat = 40,
-                            Name = "defense",
-                            PokemonModelId = 10
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 8
                         },
                         new
                         {
                             Id = 40,
-                            BaseStat = 56,
-                            Name = "speed",
-                            PokemonModelId = 10
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 8
                         },
                         new
                         {
                             Id = 41,
                             BaseStat = 45,
                             Name = "hp",
-                            PokemonModelId = 11
+                            PokemonModelId = 9
                         },
                         new
                         {
                             Id = 42,
-                            BaseStat = 50,
+                            BaseStat = 49,
                             Name = "attack",
-                            PokemonModelId = 11
+                            PokemonModelId = 9
                         },
                         new
                         {
                             Id = 43,
-                            BaseStat = 55,
+                            BaseStat = 49,
                             Name = "defense",
-                            PokemonModelId = 11
+                            PokemonModelId = 9
                         },
                         new
                         {
                             Id = 44,
-                            BaseStat = 30,
-                            Name = "speed",
-                            PokemonModelId = 11
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 9
                         },
                         new
                         {
                             Id = 45,
-                            BaseStat = 60,
-                            Name = "hp",
-                            PokemonModelId = 12
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 9
                         },
                         new
                         {
                             Id = 46,
-                            BaseStat = 62,
-                            Name = "attack",
-                            PokemonModelId = 12
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 10
                         },
                         new
                         {
                             Id = 47,
-                            BaseStat = 63,
-                            Name = "defense",
-                            PokemonModelId = 12
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 10
                         },
                         new
                         {
                             Id = 48,
-                            BaseStat = 60,
-                            Name = "speed",
-                            PokemonModelId = 12
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 10
                         },
                         new
                         {
                             Id = 49,
-                            BaseStat = 50,
-                            Name = "hp",
-                            PokemonModelId = 13
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 10
                         },
                         new
                         {
                             Id = 50,
-                            BaseStat = 52,
-                            Name = "attack",
-                            PokemonModelId = 13
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 10
                         },
                         new
                         {
                             Id = 51,
-                            BaseStat = 48,
-                            Name = "defense",
-                            PokemonModelId = 13
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 11
                         },
                         new
                         {
                             Id = 52,
-                            BaseStat = 55,
-                            Name = "speed",
-                            PokemonModelId = 13
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 11
                         },
                         new
                         {
                             Id = 53,
-                            BaseStat = 80,
-                            Name = "hp",
-                            PokemonModelId = 14
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 11
                         },
                         new
                         {
                             Id = 54,
-                            BaseStat = 82,
-                            Name = "attack",
-                            PokemonModelId = 14
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 11
                         },
                         new
                         {
                             Id = 55,
-                            BaseStat = 78,
-                            Name = "defense",
-                            PokemonModelId = 14
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 11
                         },
                         new
                         {
                             Id = 56,
-                            BaseStat = 80,
-                            Name = "speed",
-                            PokemonModelId = 14
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 12
                         },
                         new
                         {
                             Id = 57,
-                            BaseStat = 40,
-                            Name = "hp",
-                            PokemonModelId = 15
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 12
                         },
                         new
                         {
                             Id = 58,
-                            BaseStat = 45,
-                            Name = "attack",
-                            PokemonModelId = 15
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 12
                         },
                         new
                         {
                             Id = 59,
-                            BaseStat = 35,
-                            Name = "defense",
-                            PokemonModelId = 15
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 12
                         },
                         new
                         {
                             Id = 60,
-                            BaseStat = 55,
-                            Name = "speed",
-                            PokemonModelId = 15
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 12
                         },
                         new
                         {
                             Id = 61,
-                            BaseStat = 65,
+                            BaseStat = 45,
                             Name = "hp",
-                            PokemonModelId = 16
+                            PokemonModelId = 13
                         },
                         new
                         {
                             Id = 62,
-                            BaseStat = 70,
+                            BaseStat = 49,
                             Name = "attack",
-                            PokemonModelId = 16
+                            PokemonModelId = 13
                         },
                         new
                         {
                             Id = 63,
-                            BaseStat = 60,
+                            BaseStat = 49,
                             Name = "defense",
-                            PokemonModelId = 16
+                            PokemonModelId = 13
                         },
                         new
                         {
                             Id = 64,
                             BaseStat = 65,
-                            Name = "speed",
-                            PokemonModelId = 16
+                            Name = "special-attack",
+                            PokemonModelId = 13
                         },
                         new
                         {
                             Id = 65,
                             BaseStat = 65,
-                            Name = "hp",
-                            PokemonModelId = 17
+                            Name = "special-defense",
+                            PokemonModelId = 13
                         },
                         new
                         {
                             Id = 66,
-                            BaseStat = 75,
-                            Name = "attack",
-                            PokemonModelId = 17
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 14
                         },
                         new
                         {
                             Id = 67,
-                            BaseStat = 70,
-                            Name = "defense",
-                            PokemonModelId = 17
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 14
                         },
                         new
                         {
                             Id = 68,
-                            BaseStat = 90,
-                            Name = "speed",
-                            PokemonModelId = 17
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 14
                         },
                         new
                         {
                             Id = 69,
-                            BaseStat = 35,
-                            Name = "hp",
-                            PokemonModelId = 18
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 14
                         },
                         new
                         {
                             Id = 70,
-                            BaseStat = 70,
-                            Name = "attack",
-                            PokemonModelId = 18
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 14
                         },
                         new
                         {
                             Id = 71,
-                            BaseStat = 55,
-                            Name = "defense",
-                            PokemonModelId = 18
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 15
                         },
                         new
                         {
                             Id = 72,
-                            BaseStat = 25,
-                            Name = "speed",
-                            PokemonModelId = 18
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 15
                         },
                         new
                         {
                             Id = 73,
-                            BaseStat = 70,
-                            Name = "hp",
-                            PokemonModelId = 19
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 15
                         },
                         new
                         {
                             Id = 74,
-                            BaseStat = 85,
-                            Name = "attack",
-                            PokemonModelId = 19
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 15
                         },
                         new
                         {
                             Id = 75,
                             BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 15
+                        },
+                        new
+                        {
+                            Id = 76,
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 16
+                        },
+                        new
+                        {
+                            Id = 77,
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 16
+                        },
+                        new
+                        {
+                            Id = 78,
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 16
+                        },
+                        new
+                        {
+                            Id = 79,
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 16
+                        },
+                        new
+                        {
+                            Id = 80,
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 16
+                        },
+                        new
+                        {
+                            Id = 81,
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 17
+                        },
+                        new
+                        {
+                            Id = 82,
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 17
+                        },
+                        new
+                        {
+                            Id = 83,
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 17
+                        },
+                        new
+                        {
+                            Id = 84,
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 17
+                        },
+                        new
+                        {
+                            Id = 85,
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 17
+                        },
+                        new
+                        {
+                            Id = 86,
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 18
+                        },
+                        new
+                        {
+                            Id = 87,
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 18
+                        },
+                        new
+                        {
+                            Id = 88,
+                            BaseStat = 49,
+                            Name = "defense",
+                            PokemonModelId = 18
+                        },
+                        new
+                        {
+                            Id = 89,
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 18
+                        },
+                        new
+                        {
+                            Id = 90,
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 18
+                        },
+                        new
+                        {
+                            Id = 91,
+                            BaseStat = 45,
+                            Name = "hp",
+                            PokemonModelId = 19
+                        },
+                        new
+                        {
+                            Id = 92,
+                            BaseStat = 49,
+                            Name = "attack",
+                            PokemonModelId = 19
+                        },
+                        new
+                        {
+                            Id = 93,
+                            BaseStat = 49,
                             Name = "defense",
                             PokemonModelId = 19
                         },
                         new
                         {
-                            Id = 76,
-                            BaseStat = 90,
-                            Name = "speed",
+                            Id = 94,
+                            BaseStat = 65,
+                            Name = "special-attack",
                             PokemonModelId = 19
                         },
                         new
                         {
-                            Id = 77,
-                            BaseStat = 55,
+                            Id = 95,
+                            BaseStat = 65,
+                            Name = "special-defense",
+                            PokemonModelId = 19
+                        },
+                        new
+                        {
+                            Id = 96,
+                            BaseStat = 45,
                             Name = "hp",
                             PokemonModelId = 20
                         },
                         new
                         {
-                            Id = 78,
-                            BaseStat = 40,
+                            Id = 97,
+                            BaseStat = 49,
                             Name = "attack",
                             PokemonModelId = 20
                         },
                         new
                         {
-                            Id = 79,
-                            BaseStat = 40,
+                            Id = 98,
+                            BaseStat = 49,
                             Name = "defense",
                             PokemonModelId = 20
                         },
                         new
                         {
-                            Id = 80,
-                            BaseStat = 90,
-                            Name = "speed",
+                            Id = 99,
+                            BaseStat = 65,
+                            Name = "special-attack",
+                            PokemonModelId = 20
+                        },
+                        new
+                        {
+                            Id = 100,
+                            BaseStat = 65,
+                            Name = "special-defense",
                             PokemonModelId = 20
                         });
                 });

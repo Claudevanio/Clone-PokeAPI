@@ -9,6 +9,10 @@ namespace Clone_PokeAPI.Models.PokemonsDetail
         public int id { get; set; }
         public string name { get; set; }
 
+        public int height { get; set; }
+
+        public int weight { get; set; }
+
         public SpritesDto? sprites { get; set; }
 
         public List<StatsDto?> stats { get; set;}

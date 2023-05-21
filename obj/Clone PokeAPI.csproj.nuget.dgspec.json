@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Van\\PokeAPIClone\\Clone-PokeAPI\\Clone PokeAPI.csproj": {}
+    "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\Van\\repos\\Clone-PokeAPI\\Clone PokeAPI.csproj": {}
   },
   "projects": {
-    "D:\\Van\\PokeAPIClone\\Clone-PokeAPI\\Clone PokeAPI.csproj": {
+    "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\Van\\repos\\Clone-PokeAPI\\Clone PokeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Van\\PokeAPIClone\\Clone-PokeAPI\\Clone PokeAPI.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\Van\\repos\\Clone-PokeAPI\\Clone PokeAPI.csproj",
         "projectName": "Clone PokeAPI",
-        "projectPath": "D:\\Van\\PokeAPIClone\\Clone-PokeAPI\\Clone PokeAPI.csproj",
-        "packagesPath": "C:\\Users\\Maycon\\.nuget\\packages\\",
-        "outputPath": "D:\\Van\\PokeAPIClone\\Clone-PokeAPI\\obj\\",
+        "projectPath": "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\Van\\repos\\Clone-PokeAPI\\Clone PokeAPI.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego\\OneDrive\\Área de Trabalho\\Van\\repos\\Clone-PokeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maycon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +70,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -81,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

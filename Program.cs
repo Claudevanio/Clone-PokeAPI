@@ -40,7 +40,7 @@ namespace Clone_PokeAPI
             app.UseAuthorization();
 
             app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:3000")
+                builder.WithOrigins("http://localhost:4200")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials()
