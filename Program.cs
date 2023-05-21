@@ -2,6 +2,7 @@ using Clone_PokeAPI.Data;
 using Clone_PokeAPI.Repositories.Interfaces;
 using Clone_PokeAPI.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 
 namespace Clone_PokeAPI
 {
@@ -40,16 +41,24 @@ namespace Clone_PokeAPI
             app.UseAuthorization();
 
             app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:3000")
+                builder.WithOrigins("http://localhost:4200")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials()
                 );
 
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+           Path.Combine(builder.Environment.ContentRootPath, "Gifs")),
+                RequestPath = "/Gifs"
+            });
 
             app.MapControllers();
 
             app.Run();
+
+
         }
     }
 }
